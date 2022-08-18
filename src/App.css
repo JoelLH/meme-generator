@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --meme-font:'Bebas Neue', cursive;
+    --main-font: 'Karla', sans-serif;
+    --btn-gradient: linear-gradient(90.41deg, #711F8D 1.14%, #721F90 1.15%, #A818DA 100%);
+    --header-gradient: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);;
+    --inter: 'Inter', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: var(--main-font);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(249, 235, 255);
 }
-
-.App-link {
-  color: #61dafb;
+.App{
+  width: 550px;
+  height: 550px;
+  background-color: white;
 }
+/* HEADER */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-header{
+  max-width: 100%;
+  width: 100%;
+  background: var(--header-gradient);
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 0;
+    color: #fff;
+}
+.logo-box{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+}
+.logo{
+  width: 31.3px;
+  height: 26.2px;
+  margin-left: 20px;
+  margin-right: 6.7px;
+}
+.logo-name{
+    font-size: 21px;
+    letter-spacing: -0.1em;
+    margin: 0;
+}
+.page-title{
+  margin: 0;
+  margin-right: 37px;
+  font-size: 12px;
+  text-align: right;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  font-family: var(--inter);
+}
+/* FORM */
+.inputs-section{
+  padding: 36px 36.5px 55px;
+}
+.inputs-wrapper{
+  display: flex;
+  gap: 17px;
+  margin-bottom: 15px;
+}
+.inputs-wrapper input{
+  flex-grow: 1;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  font-family: var(--main-font);
+  padding-left: 11px;
+}
+.get-btn{
+  display: block;
+  width: 100%;
+  border: 1px solid #000000;
+  background: var(--btn-gradient);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.newimg-meme{
+  width: 100%;
+  height: 268px;
 }
